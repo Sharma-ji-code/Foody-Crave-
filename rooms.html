@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Private Rooms & Booking — Foody Crave</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="toast" id="toast"></div>
+<nav>
+  <div class="nav-brand"><a href="index.html" class="nav-logo">Foody<span>Crave</span></a><div class="veg-pill"><div class="veg-dot"></div><span class="veg-txt">Pure Veg</span></div></div>
+  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="order.html">Order</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="celebrations.html">Celebrate</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="rooms.html" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg"></div><div class="page-hero-pat"></div>
+  <div class="page-hero-inner">
+    <div class="page-hero-badge">Private · Exclusive · Memorable</div>
+    <h1 class="page-hero-title">Our <em>Rooms</em></h1>
+    <p class="page-hero-sub">Intimate spaces crafted for your most special moments</p>
+  </div>
+  <div class="breadcrumb"><a href="index.html">Home</a> › <span>Rooms</span></div>
+</div>
+
+<!-- ROOMS -->
+<section class="sec">
+  <div class="wrap">
+    <div class="cx">
+      <span class="lbl">Private Experiences</span>
+      <h2 class="ttl">Choose Your <em>Space</em></h2>
+      <div class="div"></div>
+    </div>
+    <div class="rooms-grid">
+      <div class="room-card reveal">
+        <div class="room-visual rv1"><div class="rv-glow"></div>🕯️</div>
+        <div class="room-body">
+          <div class="room-name">The Garden Room</div>
+          <div class="room-desc">An intimate private dining space for up to 10 guests. Perfect for romantic dinners, family meals, and business lunches. Fully air-conditioned with customizable lighting and a curated playlist.</div>
+          <div class="room-specs"><span class="room-spec"><b>Capacity:</b> Up to 10 guests</span><span class="room-spec"><b>Duration:</b> 2–4 hrs</span></div>
+          <div class="room-price">₹1,500 <small>/ session + food</small></div>
+          <button class="btn-room">Book The Garden Room</button>
+        </div>
+      </div>
+      <div class="room-card reveal">
+        <div class="room-visual rv2"><div class="rv-glow"></div>🎉</div>
+        <div class="room-body">
+          <div class="room-name">The Celebration Suite</div>
+          <div class="room-desc">Our flagship celebration space for birthdays, anniversaries and milestones. Supports all decoration packages with a projector, premium speakers, dedicated staff and customizable décor.</div>
+          <div class="room-specs"><span class="room-spec"><b>Capacity:</b> Up to 25 guests</span><span class="room-spec"><b>Duration:</b> 2–6 hrs</span></div>
+          <div class="room-price">₹3,000 <small>/ session + package</small></div>
+          <button class="btn-room">Book The Suite</button>
+        </div>
+      </div>
+      <div class="room-card reveal" style="opacity:.75">
+        <div class="room-visual rv3" style="position:relative"><div class="rv-glow"></div>🎬<div class="cs-badge">Coming Soon</div></div>
+        <div class="room-body">
+          <div class="room-name">The Theater Room</div>
+          <div class="room-desc">An exclusive private mini-theater with a 120" 4K screen, Dolby Atmos surround sound and luxury recliner seating. Perfect for movie nights, sports screenings and private premiers.</div>
+          <div class="room-specs"><span class="room-spec"><b>Capacity:</b> Up to 20 guests</span><span class="room-spec"><b>Duration:</b> 2–5 hrs</span></div>
+          <div class="room-price" style="color:var(--muted)">Pricing TBA</div>
+          <button class="btn-room off">Notify Me When Open</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TABLE BOOKING -->
+<section class="sec" style="background:var(--warm)" id="table-booking">
+  <div class="wrap">
+    <div class="booking-grid">
+      <div class="booking-form reveal">
+        <div style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--brown);margin-bottom:18px">📅 Reserve a Table</div>
+        <div class="form-row">
+          <div class="fg"><label class="fl2">Full Name *</label><input class="fi2" type="text" id="tName" placeholder="Your name"></div>
+          <div class="fg"><label class="fl2">Phone *</label><input class="fi2" type="tel" id="tPhone" placeholder="+91 XXXXX XXXXX"></div>
+        </div>
+        <div class="form-row">
+          <div class="fg"><label class="fl2">Date *</label><input class="fi2" type="date" id="tDate"></div>
+          <div class="fg"><label class="fl2">Time Slot</label>
+            <select class="fs2"><option>7:00 AM</option><option>9:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>3:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>10:00 PM</option><option>12:00 AM</option><option>2:00 AM</option></select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="fg"><label class="fl2">Guests</label>
+            <select class="fs2"><option>1–2 Guests</option><option>3–4 Guests</option><option>5–6 Guests</option><option>7–10 Guests</option><option>10+ Guests</option></select>
+          </div>
+          <div class="fg"><label class="fl2">Seating Preference</label>
+            <select class="fs2"><option>No Preference</option><option>Window Seat</option><option>Outdoor Patio</option><option>Cozy Corner</option><option>Lounge Area</option></select>
+          </div>
+        </div>
+        <div class="fg"><label class="fl2">Special Requests</label><textarea class="ft2" placeholder="Occasion, dietary needs, accessibility..."></textarea></div>
+        <button class="btn-dark" id="reserveBtn" style="width:100%;margin-top:8px;padding:14px;font-size:.8rem;letter-spacing:1.5px">Confirm Reservation via WhatsApp</button>
+      </div>
+      <div>
+        <span class="lbl">Dine-In Reservations</span>
+        <h2 class="ttl">Reserve Your <em>Table</em></h2>
+        <div class="div"></div>
+        <div class="booking-feats">
+          <div class="bfeat reveal"><div class="bfeat-icon">⚡</div><div><div class="bfeat-title">Instant Confirmation</div><div class="bfeat-desc">WhatsApp confirmation within minutes of your booking.</div></div></div>
+          <div class="bfeat reveal"><div class="bfeat-icon">🌿</div><div><div class="bfeat-title">Curated Seating</div><div class="bfeat-desc">Window seats, cozy corners, outdoor patio or lounge — your choice.</div></div></div>
+          <div class="bfeat reveal"><div class="bfeat-icon">🎂</div><div><div class="bfeat-title">Occasion Setup</div><div class="bfeat-desc">Celebrating something? Tell us and we'll prepare a special welcome.</div></div></div>
+          <div class="bfeat reveal"><div class="bfeat-icon">🕐</div><div><div class="bfeat-title">Open 24×7</div><div class="bfeat-desc">Book any time — morning, evening or 3 AM. We are always here!</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="mo-ov" id="moOv">
+  <div class="mo-box">
+    <button class="mo-x" id="moX">✕</button>
+    <div class="mo-t" id="moTitle">Book Your Experience</div>
+    <div class="mo-s">Fill details — our team confirms via WhatsApp within 2 hours.</div>
+    <div class="form-row">
+      <div class="fg"><label class="fl2">Name</label><input class="fi2" type="text" id="moName" placeholder="Full name"></div>
+      <div class="fg"><label class="fl2">Phone</label><input class="fi2" type="tel" id="moPhone" placeholder="+91 XXXXX XXXXX"></div>
+    </div>
+    <div class="form-row">
+      <div class="fg"><label class="fl2">Date</label><input class="fi2" type="date" id="moDate"></div>
+      <div class="fg"><label class="fl2">Time</label><input class="fi2" type="time"></div>
+    </div>
+    <div class="form-row">
+      <div class="fg"><label class="fl2">Guests</label><input class="fi2" type="number" placeholder="No. of guests" min="1"></div>
+      <div class="fg"><label class="fl2">Occasion</label>
+        <select class="fs2" id="moOccasion"><option>Birthday</option><option>Anniversary</option><option>Proposal</option><option>Corporate</option><option>Baby Shower</option><option>Get-Together</option><option>Other</option></select>
+      </div>
+    </div>
+    <div class="fg"><label class="fl2">Special Requests</label><textarea class="ft2" placeholder="Theme, decoration, dietary needs..."></textarea></div>
+    <button class="btn-dark" id="moConfirm" style="width:100%;margin-top:10px;padding:13px;font-size:.8rem;letter-spacing:1.5px">Confirm Booking via WhatsApp →</button>
+    <p style="text-align:center;font-size:.7rem;color:var(--muted);margin-top:8px">No advance payment required. Pay on arrival.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div><a href="index.html" class="footer-logo">Foody<span>Crave</span></a><p class="footer-desc">100% pure veg café and celebration venue. CDA Sector 6, Cuttack. Open 24×7.</p></div>
+      <div><div class="footer-col-title">Pages</div><div class="footer-links"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="order.html">Order Online</a><a href="rooms.html">Rooms</a><a href="celebrations.html">Celebrations</a><a href="contact.html">Contact</a></div></div>
+      <div><div class="footer-col-title">Info</div><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Cancellation</a><a href="#">Refund Policy</a><a href="#">Careers</a></div></div>
+      <div><div class="footer-col-title">Contact</div><div class="footer-hours" style="color:rgba(255,255,255,.4)">Open <span style="color:var(--gold)">24×7</span><br>📞 <a href="tel:+916371471048" style="color:var(--gold)">+91 63714 71048</a><br>📍 CDA Sector 6, Cuttack</div></div>
+    </div>
+    <div class="footer-bottom"><div>© 2026 <em>Foody Crave</em>. All rights reserved.</div><div>Made with ❤️ in Cuttack</div></div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
